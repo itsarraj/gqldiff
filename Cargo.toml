@@ -1,0 +1,24 @@
+[package]
+name = "gqldiff"
+version = "0.1.0"
+edition = "2021"
+description = "Diffs two GraphQL SDL schemas and reports breaking changes — a CI gate on your GraphQL API contract"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/gqldiff"
+readme = "README.md"
+keywords = ["graphql", "schema", "diff", "breaking-changes", "cli"]
+categories = ["command-line-utilities", "development-tools"]
+
+[lib]
+name = "gqldiff"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gqldiff"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
+regex = "1"
