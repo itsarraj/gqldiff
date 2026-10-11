@@ -7,6 +7,12 @@ GraphQL's own ecosystem has `graphql-inspector` (Node) for this; there's
 no standalone Rust equivalent that doesn't require pulling in a full
 `graphql-parser`/`async-graphql` dependency tree just to diff two files.
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
